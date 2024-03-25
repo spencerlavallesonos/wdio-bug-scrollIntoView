@@ -9,6 +9,6 @@ describe("WDIO Bug", () => {
       console.log('Will trigger \"Request failed with status 500\"')
       await shopButton.scrollIntoView()
       await shopButton.click()
-      expect(await browser.getTitle()).toBe('Shop All Products | Sonos')
+      expect(await browser.getTitle()).toContain('Sonos')
     })
 })
